@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: calibri;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #060617;
+}
+
+.clock {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    
+}
+
+.clock::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #2196f3;
+    border: 2px solid #060617;
+    border-radius: 50%;
+    z-index: 99999;
+}
+
+.hour, .min, .sec {
+    position: absolute;
+}
+
+.hour, .hr {
+    width: 200px;
+    height: 200px;
+}
+
+.min, .mn {
+    width: 230px;
+    height: 230px;
+}
+
+.sec, .sc {
+    width: 250px;
+    height: 250px;
+}
+
+.hr, .mn, .sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.hr::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 100px;
+    background: #fff;
+}
+
+.mn::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 110px;
+    background: #fff;
+}
+
+.sc::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 160px;
+    background: #2196f3;
+}
+
+
+/* Digital Clock  */
+.digital_clock {
+    display: flex;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 4em;
+}
