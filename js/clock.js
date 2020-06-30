@@ -33,7 +33,7 @@ setInterval(() => {
     s = (s < 10) ? '0'+ s : s;
 
     if (h > 12) {
-        h = h-12;
+        h = ((h = h - 12) == 0) ? 12 : (h = h - 12);
         am = 'PM'
     } else {
         h = h;
